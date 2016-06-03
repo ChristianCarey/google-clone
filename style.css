@@ -1,15 +1,29 @@
 * {
 	box-sizing: border-box;
+	font-family: arial, sans-serif;
+	font-size: 13px;
+}
+
+html, body {
+	height: 100%;
 }
 
 ul {
 	list-style: none;
 	margin:0;
+	padding: 0;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -3em;
 }
 
 .navbar {
 	width: 100%;
-	height: 45px;
+	height: 55px;
 	padding-right: 20px;
 }
 
@@ -19,13 +33,25 @@ ul {
 
 .nav-elements li {
 	display: inline-block;
-	line-height: 45px;
+	line-height: 55px;
+	margin-left: 15px;
+}
+
+.navbar .fa {
+	font-size: 1.5em;
+	vertical-align: middle;
+}
+
+.navbar .fa-plus-circle {
+	font-size: 3.0em;
+	color:#0097A7;
 }
 
 .main-content-container {
-	width: 550px;
+	width: 579px;
 	margin: 0 auto;
-	margin-top: 100px;
+	margin-top: 19vh;
+	text-align: center;
 }
 
 .logo {
@@ -41,35 +67,59 @@ ul {
 }
 
 .search-bar {
+	height: 38px;
 	margin-top: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 28px;
 	width: 100%;
+}
+
+.search-bar:focus {
+    outline: none !important;
+    border:1px solid #0097A7;
+}
+
+.fa-microphone {
+    float: right;
+    margin-right: 10px;
+    margin-top: -58px;
+    position: relative;
+    z-index: 2;
+    color: #0097A7;
+    font-size: 1.7em;
 }
 
 .submit-buttons-container {
 	margin: 0 auto;
-	width: 300px;
-	
 }
 
 .button {
-	background: #ddd;
+	background: #F4F4F4;
 	border: none;
 	padding: 10px;
-	color: #555;
-	width: 137px;
 	margin: 5px;
+	font-weight: bold;
+	color: #757575;
+}
+
+.search-button {
+	width: 125px;
+}
+
+.lucky-button {
+	width: 140px;
 }
 
 .footer {
-	height: 45px;
 	background: #eee;
-	position: absolute;
- 	right: 0;
-	bottom: 0;
-  	left: 0;
   	border-top: 1px solid #ddd;
   	color: #555;
+  	padding-left: 25px;
+  	padding-right: 25px;
+}
+
+.push, .footer {
+	height: 3em;
+	clear: both;
 }
 
 .left-footer-items-container {
@@ -78,7 +128,9 @@ ul {
 
 .footer-items li {
 	display: inline-block;
-	line-height: 45px;
+	line-height: 3em;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .right-footer-items-container {
 	float: right;

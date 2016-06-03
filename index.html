@@ -3,44 +3,48 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Google</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="nav-elements-container">
-        <ul class="nav-elements">
-          <li>
-            Gmail
-          </li>
-          <li>
-            Images
-          </li>
-          <li>
-            Apps
-          </li>
-          <li>
-            Nots
-          </li>
-          <li>
-            Acc
-          </li>
-        </ul>
+    <div class="wrapper">
+      <nav class="navbar">
+        <div class="nav-elements-container">
+          <ul class="nav-elements">
+            <li>
+              Gmail
+            </li>
+            <li>
+              Images
+            </li>
+            <li>
+              <i class="fa fa-th" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-bell" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="main-content-container">
+        <div class="logo">
+          <img src='logo.png'>
+        </div>
+      <div class="search-form-container">       
+          <form class="search-form">
+            <input class="search-bar" type="text">
+            <i class="fa fa-microphone" aria-hidden="true"></i>
+            <div class="submit-buttons-container">
+              <input class="button search-button" type="submit" value="Google Search">
+              <input class="button lucky-button" type="submit" value="I'm Feeling Lucky">
+            </div>
+          </form>
+        </div>
       </div>
-    </nav>
-    <div class="main-content-container">
-      <div class="logo">
-        <img src='http://www.underconsideration.com/brandnew/archives/google_2015_logo_detail.png'>
-      </div>
-    <div class="search-form-container">       
-        <form class="search-form">
-          <input class="search-bar" type="text">
-          <div class="submit-buttons-container">
-            <input class="button" type="submit" value="Google Search">
-            <input class="button" type="submit" value="I'm feeling lucky">
-          </div>
-        </form>
-      </div>
+      <div class="push"></div>
     </div>
     <div class="footer">
       <div class="left-footer-items-container">
